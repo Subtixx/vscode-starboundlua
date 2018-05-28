@@ -3,23 +3,19 @@
     "version": "0.1.0",
     "configurations": [
         {
+            "name": "Launch Extension",
             "type": "extensionHost",
             "request": "launch",
-            "name": "Launch Extension",
             "runtimeExecutable": "${execPath}",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
             "outFiles": [
                 "${workspaceFolder}/out/**/*.js"
-            ]
-        },
-        {
-            "name": "Extension",
-            "type": "extensionHost",
-            "request": "launch",
-            "runtimeExecutable": "${execPath}",
-            "args": ["--extensionDevelopmentPath=${workspaceRoot}" ]
+            ],
+            "preLaunchTask": "tsc: watch - tsconfig.json"
         }
     ]
 }
