@@ -1,0 +1,79 @@
+{
+    "name": "starbound-lua",
+    "displayName": "Starbound Lua",
+    "description": "Starbound Lua Syntax Highlighting + Snippets",
+    "version": "1.1.0",
+    "publisher": "subtixx",
+    "license": "GPL v3.0",
+    "icon": "images/logo.png",
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
+    "homepage": "https://github.com/Subtixx/vscode-starbound/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/Subtixx/vscode-starbound/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Subtixx/vscode-starbound.git"
+    },
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "tslint": "tslint -c tslint.json src/extension.ts"
+    },
+    "devDependencies": {
+        "typescript": "^2.1.4",
+        "vscode": "^1.1.10",
+        "@types/node": "^6.0.40"
+    },
+    "categories": [
+        "Programming Languages",
+        "Themes",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "starboundlua",
+                "aliases": [
+                    "Starbound Lua",
+                    "starboundlua"
+                ],
+                "extensions": [
+                    ".lua"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "starboundlua",
+                "scopeName": "source.lua",
+                "path": "./syntaxes/starboundlua.tmLanguage.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "Dark Starbound Edit (Visual Studio)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Dark-Starbound-Edit.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "starboundlua",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

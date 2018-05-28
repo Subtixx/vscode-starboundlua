@@ -1,0 +1,34 @@
+{
+    "$schema": "vscode://schemas/color-theme",
+    "name": "Dark Starbound Edit (Visual Studio)",
+    "include": "./dark_vs.json",
+    "tokenColors":[
+		{
+			"scope": "constant.language",
+			"settings": {
+				"foreground": "#566dd6"
+			}
+		},
+		{
+            "name": "Keyword",
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#4887bb"
+			}
+		},
+        {
+            "name": "Function Name",
+            "scope": "entity.name.function",
+            "settings": {
+                "foreground": "#c2ffaf"
+            }
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "settings": {
+                "foreground": "#b7afff"
+            }
+        }
+    ]
+}
