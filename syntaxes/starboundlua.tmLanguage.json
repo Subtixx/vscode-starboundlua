@@ -209,135 +209,135 @@
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\b(size|clear|mousePosition|drawImage|drawImageDrawable|drawImageRect|drawTiledImage|drawLine|drawRect|drawPoly|drawTriangles|drawText|explore|result|init|addEntropy|randu32|randu64|randi32|randi64|randf|randf|randf|randf|randb|perlinsource.get)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bactiveItem\\.(ownerEntityId|ownerTeam|ownerAimPosition|ownerPowerMultiplier|fireMode|hand|handPosition|aimAngleAndDirection|aimAngle|setHoldingItem|setBackArmFrame|setFrontArmFrame|setTwoHandedGrip|setRecoil|setOutsideOfHand|setArmAngle|setFacingDirection|setDamageSources|setItemDamageSources|setShieldPolys|setItemShieldPolys|setForceRegions|setItemForceRegions|setCursor|setScriptedAnimationParameter|setInventoryIcon|setInstanceValue|callOtherHandScript|interact|emote|setCameraFocusEntity)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bactiveItemAnimation\\.(ownerPosition|ownerAimPosition|ownerArmAngle|ownerFacingDirection|handPosition|partPoint|partPoly)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bmcontroller\\.(boundBox|collisionPoly|collisionBody|mass|position|xPosition|yPosition|velocity|xVelocity|yVelocity|rotation|isColliding|isNullColliding|isCollisionStuck|stickingDirection|liquidPercentage|liquidId|onGround|zeroG|atWorldLimit|setAnchorState|resetAnchorState|anchorState|setPosition|setXPosition|setYPosition|translate|setVelocity|setXVelocity|setYVelocity|addMomentum|setRotation|baseParameters|walking|running|movingDirection|facingDirection|crouching|flying|falling|canJump|jumping|groundMovement|liquidMovement|controlRotation|controlAcceleration|controlForce|controlApproachVelocity|controlApproachVelocityAlongAngle|controlApproachXVelocity|controlApproachYVelocity|controlParameters|controlModifiers|controlMove|controlFace|controlDown|controlCrouch|controlJump|controlHoldJump|controlFly|autoClearControls|setAutoClearControls|clearControls|parameters|applyParameters|resetParameters|mass|position|xPosition|yPosition|velocity|xVelocity|yVelocity|rotation|collisionPoly|collisionBody|collisionBoundBox|localBoundBox|isColliding|isNullColliding|isCollisionStuck|stickingDirection|liquidPercentage|liquidId|onGround|zeroG|atWorldLimit|setPosition|setXPosition|setYPosition|translate|setVelocity|setXVelocity|setYVelocity|addMomentum|setRotation|rotate|accelerate|force|approachVelocity|approachVelocityAlongAngle|approachXVelocity|approachYVelocity)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\banimator\\.(setAnimationState|animationState|animationStateProperty|setGlobalTag|setPartTag|setFlipped|setAnimationRate|rotateGroup|currentRotationAngle|hasTransformationGroup|translateTransformationGroup|rotateTransformationGroup|scaleTransformationGroup|transformTransformationGroup|resetTransformationGroup|setParticleEmitterActive|setParticleEmitterEmissionRate|setParticleEmitterBurstCount|setParticleEmitterOffsetRegion|burstParticleEmitter|setLightActive|setLightPosition|setLightColor|setLightPointAngle|hasSound|setSoundPool|setSoundPosition|playSound|setSoundVolume|setSoundPitch|stopAllSounds|setEffectActive|partPoint|partPoly|partProperty)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bcelestial\\.(skyFlying|skyFlyingType|skyWarpPhase|skyWarpProgress|skyInHyperspace|skyFlying|flying|shipSystemPosition|shipDestination|shipLocation|currentSystem|planetSize|planetPosition|planetParameters|visitableParameters|planetName|planetSeed|clusterSize|planetOres|systemPosition|orbitPosition|systemObjects|objectType|objectParameters|systemSpawnObject|playerShips|playerShipPosition|objectParameters|scanSystems|scanConstellationLines|scanRegionFullyLoaded|centralBodyImages|planetaryObjectImages|worldImages|starImages)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bCommandProcessor\\.(adminCheck)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bconfig\\.(getParameter)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bpane\\.(containerEntityId|playerEntityId|dismiss|sourceEntity|dismiss|playSound|stopAllSounds|setTitle|setTitleIcon)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bentity\\.(id|damageTeam|isValidTarget|distanceToEntity|entityInSight|position|entityType|uniqueId|persistent)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bitem\\.(name|count|setCount|maxStack|matches|consume|empty|descriptor|description|friendlyName|rarity|rarityString|price|fuelAmount|iconDrawables|dropDrawables|largeImage|tooltipKind|category|pickupSound|twoHanded|timeToLive|learnBlueprintsOnPickup|hasItemTag|pickupQuestTemplates)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\blocalAnimator\\.(playAudio|spawnParticle|addDrawable|clearDrawables|addLightSource|clearLightSources)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bmessage\\.(setHandler)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bmonster\\.(type|seed|uniqueParameters|familyIndex|level|setDamageOnTouch|setDamageSources|setDamageParts|setAggressive|setDropPool|toAbsolutePosition|mouthPosition|flyTo|setDeathParticleBurst|setDeathSound|setPhysicsForces|setName|setDisplayNametag|say|sayPortrait|setDamageTeam|setUniqueId|setDamageBar|setInteractive|setAnimationParameter)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bnpc\\.(toAbsolutePosition|species|gender|humanoidIdentity|npcType|seed|level|dropPools|setDropPools|energy|maxEnergy|say|sayPortrait|emote|dance|setInteractive|setLounging|resetLounging|isLounging|loungingIn|setOfferedQuests|setTurnInQuests|setItemSlot|getItemSlot|disableWornArmor|beginPrimaryFire|beginAltFire|endPrimaryFire|endAltFire|setShifting|setDamageOnTouch|aimPosition|setAimPosition|setDeathParticleBurst|setStatusText|setDisplayNametag|setPersistent|setKeepAlive|setDamageTeam|setAggressive|setUniqueId)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bobject\\.(name|direction|position|setInteractive|uniqueId|setUniqueId|boundBox|spaces|setProcessingDirectives|setSoundEffectEnabled|smash|level|toAbsolutePosition|say|sayPortrait|isTouching|setLightColor|getLightColor|inputNodeCount|outputNodeCount|getInputNodePosition|getOutputNodePosition|getInputNodeLevel|getOutputNodeLevel|isInputNodeConnected|isOutputNodeConnected|getInputNodeIds|getOutputNodeIds|setOutputNodeLevel|setAllOutputNodes|setOfferedQuests|setTurnInQuests|setConfigParameter|setAnimationParameter|setMaterialSpaces|setDamageSources|health|setHealth)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bobjectAnimator\\.(getParameter|direction|position)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bphysics\\.(setForceEnabled|setCollisionPosition|setCollisionEnabled)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bplayer\\.(id|uniqueId|species|gender|isAdmin|interact|shipUpgrades|upgradeShip|setUniverseFlag|giveBlueprint|blueprintKnown|makeTechAvailable|makeTechUnavailable|enableTech|equipTech|unequipTech|availableTechs|enabledTechs|equippedTech|currency|addCurrency|consumeCurrency|cleanupItems|giveItem|hasItem|hasCountOfItem|consumeItem|inventoryTags|itemsWithTag|consumeTaggedItem|hasItemWithParameter|consumeItemWithParameter|getItemWithParameter|primaryHandItem|altHandItem|primaryHandItemTags|altHandItemTags|essentialItem|giveEssentialItem|removeEssentialItem|equippedItem|setEquippedItem|swapSlotItem|setSwapSlotItem|canStartQuest|startQuest|hasQuest|hasCompletedQuest|enableMission|completeMission|radioMessage|worldId|serverUuid|ownShipWorldId|lounge|isLounging|loungingIn|playTime|introComplete|setIntroComplete|warp|canDeploy|isDeployed|confirm|playCinematic|recordEvent|worldHasOrbitBookmark|orbitBookmarks|systemBookmarks|addOrbitBookmark|removeOrbitBookmark|addTeleportBookmark|isMapped|mappedObjects|collectables)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bplayerCompanions\\.(getCompanions|setCompanions)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bprojectile\\.(getParameter|die|sourceEntity|powerMultiplier|power|setPower|timeToLive|setTimeToLive|collision|processAction|setReferenceVelocity)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bquest\\.(state|complete|fail|setCanTurnIn|questId|templateId|seed|questDescriptor|questArcDescriptor|questArcPosition|worldId|serverUuid|parameters|setParameter|setIndicators|setObjectiveList|setProgress|setCompassDirection|setTitle|setText|setCompletionText|setFailureText|setPortrait|setPortraitTitle|addReward)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\broot\\.(assetJson|makeCurrentVersionedJson|loadVersionedJson|evalFunction|evalFunction2|imageSize|imageSpaces|nonEmptyRegion|npcConfig|npcVariant|projectileGravityMultiplier|projectileConfig|itemDescriptorsMatch|recipesForItem|itemType|itemTags|itemHasTag|itemConfig|createItem|tenantConfig|getMatchingTenants|liquidStatusEffects|generateName|questConfig|npcPortrait|monsterPortrait|isTreasurePool|createTreasure|materialMiningSound|materialFootstepSound|materialHealth|materialConfig|modConfig|liquidConfig|liquidName|liquidId|monsterSkillParameter|monsterParameters|monsterMovementSettings|createBiome|hasTech|techType|techConfig|treeStemDirectory|treeFoliageDirectory|collection|collectables|elementalResistance|dungeonMetadata|behavior)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\banimationConfig\\.(animationParameter|partPoint|partPoly)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bstagehand\\.(id|position|setPosition|die|typeName|setUniqueId)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bstatus\\.(statusProperty|setStatusProperty|stat|statPositive|resourceNames|isResource|resource|resourcePositive|setResource|modifyResource|giveResource|consumeResource|overConsumeResource|resourceLocked|setResourceLocked|resetResource|resetAllResources|resourceMax|resourcePercentage|setResourcePercentage|modifyResourcePercentage|getPersistentEffects|addPersistentEffect|addPersistentEffects|setPersistentEffects|clearPersistentEffects|clearAllPersistentEffects|addEphemeralEffect|addEphemeralEffects|removeEphemeralEffect|clearEphemeralEffects|damageTakenSince|inflictedHitsSince|inflictedDamageSince|activeUniqueStatusEffectSummary|primaryDirectives|setPrimaryDirectives|applySelfDamageRequest)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\beffect\\.(duration|modifyDuration|expire|sourceEntity|setParentDirectives|getParameter|addStatModifierGroup|setStatModifierGroup|removeStatModifierGroup)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\btech\\.(aimPosition|setVisible|setParentState|setParentDirectives|setParentHidden|setParentOffset|parentLounging|setToolUsageSuppressed)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bscript\\.(setUpdateDelta|updateDt)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bsb\\.(nrand|makeUuid|logInfo|logWarn|logError|setLogMap|printJson|print|interpolateSinEase|replaceTags|jsonMerge|jsonQuery|staticRandomI32|staticRandomI32Range|staticRandomDouble|staticRandomDoubleRange|makeRandomSource|makePerlinSource)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bvehicle\\.(controlHeld|aimPosition|entityLoungingIn|setLoungeEnabled|setLoungeOrientation|setLoungeEmote|setLoungeDance|setLoungeStatusEffects|setPersistent|setInteractive|setDamageTeam|setMovingCollisionEnabled|setForceRegionEnabled|setDamageSourceEnabled|destroy)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bwidget\\.(playSound|getPosition|setPosition|getSize|setSize|setVisible|active|focus|hasFocus|blur|getData|setData|inMember|getText|setText|setFontColor|setImage|setImageScale|setImageRotation|setButtonEnabled|setButtonImage|setButtonImages|setButtonCheckedImages|setButtonOverlayImage|getChecked|setChecked|getSelectedOption|getSelectedData|setSelectedOption|setOptionEnabled|setOptionVisible|setProgress|setSliderEnabled|getSliderValue|setSliderValue|getSliderRange|clearListItems|addListItem|removeListItem|getListSelected|setListSelected|registerMemberCallback|itemGridItems|itemSlotItem|setItemSlotItem|setItemSlotProgress|bindCanvas)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\bworld\\.(type|terrestrial|size|magnitude|distance|polyContains|xwrap|xwrap|nearestTo|pointCollision|pointTileCollision|lineCollision|lineTileCollision|lineTileCollisionPoint|rectCollision|rectTileCollision|polyCollision|collisionBlocksAlongLine|liquidAlongLine|resolvePolyCollision|tileIsOccupied|placeObject|spawnItem|spawnTreasure|spawnMonster|spawnNpc|spawnStagehand|spawnProjectile|spawnVehicle|threatLevel|time|day|timeOfDay|dayLength|getProperty|setProperty|liquidAt|liquidAt|gravity|spawnLiquid|destroyLiquid|isTileProtected|findPlatformerPath|platformerPathStart|lightLevel|windLevel|breathable|environmentStatusEffects|underground|inSurfaceLayer|oceanLevel|material|mod|materialHueShift|modHueShift|materialColor|setMaterialColor|damageTiles|damageTileArea|placeMaterial|placeMod|entityQuery|monsterQuery|npcQuery|objectQuery|itemDropQuery|playerQuery|loungeableQuery|entityLineQuery|objectLineQuery|npcLineQuery|objectAt|entityExists|entityDamageTeam|entityCanDamage|entityAggressive|entityType|entityPosition|entityMouthPosition|entityVelocity|entityCurrency|entityHasCountOfItem|entityHealth|entitySpecies|entityGender|entityName|entityTypeName|entityDescription|entityPortrait|entityHandItem|entityHandItemDescriptor|itemDropItem|entityUniqueId|getObjectParameter|objectSpaces|farmableStage|containerSize|containerClose|containerOpen|containerItems|containerItemAt|containerConsume|containerConsumeAt|containerAvailable|containerTakeAll|containerTakeAt|containerTakeNumItemsAt|containerItemsCanFit|containerItemsFitWhere|containerAddItems|containerStackItems|containerPutItemsAt|containerItemApply|containerSwapItemsNoCombine|containerSwapItems|callScriptedEntity|sendEntityMessage|findUniqueEntity|loungeableOccupied|isMonster|monsterType|isNpc|npcType|stagehandType|debugPoint|debugLine|debugPoly|debugText|breakObject|isVisibleToPlayer|loadRegion|regionActive|setTileProtection|dungeonId|setDungeonId|isPlayerModified|forceDestroyLiquid|loadUniqueEntity|setUniqueId|takeItemDrop|setPlayerStart|players|fidelity|flyingType|warpPhase|setUniverseFlag|universeFlags|universeFlagSet|skyTime|setSkyTime|placeDungeon|addBiomeRegion|expandBiomeRegion|pregenerateAddBiome|pregenerateExpandBiome|setLayerEnvironmentBiome|setPlanetType|setDungeonGravity|setDungeonBreathable)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "constant.other.module.lua"
+			"name": "constant.other.module.lua support.class.lua"
 		},
 		{
 			"match": "\\b(break|do|else|for|if|elseif|goto|return|then|repeat|while|until|end|function|local|in)\\b",
@@ -353,15 +353,15 @@
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\b(assert|collectgarbage|dofile|error|getfenv|getmetatable|ipairs|loadfile|loadstring|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setfenv|setmetatable|tonumber|tostring|type|unpack|xpcall)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "support.function.lua"
+			"name": "support.function.lua support.class.lua"
 		},
 		{
 			"match": "(?<![^.]\\.|:)\\b(coroutine\\.(create|resume|running|status|wrap|yield)|string\\.(byte|char|dump|find|format|gmatch|gsub|len|lower|match|rep|reverse|sub|upper)|table\\.(concat|insert|maxn|remove|sort)|math\\.(abs|acos|asin|atan2?|ceil|cosh?|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|pow|rad|random|randomseed|sinh?|sqrt|tanh?)|io\\.(close|flush|input|lines|open|output|popen|read|tmpfile|type|write)|os\\.(clock|date|difftime|execute|exit|getenv|remove|rename|setlocale|time|tmpname)|package\\.(cpath|loaded|loadlib|path|preload|seeall)|debug\\.(debug|[gs]etfenv|[gs]ethook|getinfo|[gs]etlocal|[gs]etmetatable|getregistry|[gs]etupvalue|traceback))\\b(?=\\s*(?:[({\"']|\\[\\[))",
-			"name": "support.function.library.lua"
+			"name": "support.function.library.lua support.class.lua"
 		},
 		{
 			"match": "\\b(and|or|not)\\b",
-			"name": "keyword.operator.lua"
+			"name": "keyword.operator.lua keyword.control.lua"
 		},
 		{
 			"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*(?:[({\"']|\\[\\[))",
