@@ -1,9 +1,12 @@
 'use strict';
 
 import * as vscode from 'vscode'
+import * as completion from './features/completionItemProvider'
+import * as signature from './features/signatureHelpProvider'
+import * as hover from './features/hoverProvider'
 import { debuglog } from 'util';
 
-class LuaType {
+/*class LuaType {
 	label: string;
 	description: string;
 
@@ -11,7 +14,7 @@ class LuaType {
 	 * 
 	 * @param label The actual function name
 	 * @param description The description of the function
-	 */
+	 *
 	constructor(label: string, description: string) {
 		this.label = label;
 		this.description = description;
@@ -45,7 +48,7 @@ class LuaFunction {
 	 * @param returnType The return type of the function
 	 * @param args An array containing all arguments and their types
 	 * @param argDescs A dictionary containing all arguments and their description (Key argument, Value description)
-	 */
+	 *
 	constructor(label: string, description: string, returnType: string, args: string[], argDescs: { [key: string]: string }) {
 		this.label = label;
 		this.args = args;
@@ -1198,4 +1201,21 @@ export function activate(context: vscode.ExtensionContext) {
 				}
 			},
 		}, ".");
+}*/
+
+export function activate(context: vscode.ExtensionContext) {
+	console.log("StarboundLUA: Init");
+
+	// Register the built-in function definitions
+	vscode.languages.registerCompletionItemProvider({ scheme: "file", language: "starboundlua" }, new completion.functionProvider(context.extensionPath), ".");
+	vscode.languages.registerHoverProvider({scheme: "file", language: "starboundlua"}, new hover.hoverProvider(context.extensionPath));
+	
+	if (!vscode.workspace.getConfiguration("starbound-sense").get("activate_signature_help_parentheses", true))
+		vscode.languages.registerSignatureHelpProvider({ scheme: "file", language: "starboundlua" }, new signature.signatureProvider(context.extensionPath), "");
+	else
+		vscode.languages.registerSignatureHelpProvider({ scheme: "file", language: "starboundlua" }, new signature.signatureProvider(context.extensionPath), "(");
+}
+
+export function deactivate() {
+	console.log("StarboundLUA: Free");
 }
