@@ -2,7 +2,7 @@
     "name": "starbound-lua",
     "displayName": "Starbound Lua",
     "description": "Starbound Lua Code Completion + Syntax Highlighting",
-    "version": "2.3.5",
+    "version": "2.4.0",
     "publisher": "subtixx",
     "license": "GPL v3.0",
     "icon": "images/logo.png",
