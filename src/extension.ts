@@ -57,7 +57,7 @@ class LuaFunction {
 	getMarkdown(): vscode.MarkdownString {
 		let str = new vscode.MarkdownString();
 		str.appendMarkdown(this.description + "\n\n");
-		str.appendCodeblock(this.returnType + " " + this.label + " ( " + this.args.join(", ") + " )", "starboundlua");
+		str.appendMarkdown(this.returnType + " " + this.label + " ( " + this.args.join(", ") + " )"); //, "starboundlua");
 		for (const key in this.argDescs) {
 			if (this.argDescs.hasOwnProperty(key)) {
 				const element = this.argDescs[key];
@@ -122,7 +122,7 @@ export function activate(context: vscode.ExtensionContext) {
 						new LuaFunction("randb", "Returns a random `bool` value.", "`bool`", [""], {}).toCompletionItem(),
 						new LuaFunction("perlinsource.get", "Returns a `float` value from the Perlin source using 1, 2, or 3 dimensions of input.", "`float`", ["`float` x", "[`float` y]", "[`float` z]"], {}).toCompletionItem(),
 
-						new LuaType("activeitem", "The activeItem table contains bindings which provide functionality for the ActiveItem and for the item's 'owner' (a ToolUser entity currently holding the item).").toCompletionItem(),
+						new LuaType("activeItem", "The activeItem table contains bindings which provide functionality for the ActiveItem and for the item's 'owner' (a ToolUser entity currently holding the item).").toCompletionItem(),
 						new LuaType("activeItemAnimation", "The activeItemAnimation table contains bindings available to client-side animation scripts for active items.").toCompletionItem(),
 						new LuaType("mcontroller", "The `mcontroller` table sometimes contains functions relating to the actor movement controller.\nThe `mcontroller` table contains functions relating to the movement controller.").toCompletionItem(),
 						new LuaType("animator", "The *animator* table contains functions that relate to an attached networked animator. Networked animators are found in:").toCompletionItem(),

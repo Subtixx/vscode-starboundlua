@@ -1,8 +1,8 @@
 {
     "name": "starbound-lua",
     "displayName": "Starbound Lua",
-    "description": "Starbound Lua Syntax Highlighting + Snippets",
-    "version": "2.0.0",
+    "description": "Starbound Lua Code Completion + Syntax Highlighting",
+    "version": "2.3.0",
     "publisher": "subtixx",
     "license": "GPL v3.0",
     "icon": "images/logo.png",
@@ -10,13 +10,13 @@
         "color": "#C80000",
         "theme": "dark"
     },
-    "homepage": "https://github.com/Subtixx/vscode-starbound/blob/master/README.md",
+    "homepage": "https://github.com/Subtixx/vscode-starboundlua/blob/master/README.md",
     "bugs": {
-        "url": "https://github.com/Subtixx/vscode-starbound/issues"
+        "url": "https://github.com/Subtixx/vscode-starboundlua/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Subtixx/vscode-starbound.git"
+        "url": "https://github.com/Subtixx/vscode-starboundlua.git"
     },
     "engines": {
         "vscode": "^1.18.0"
