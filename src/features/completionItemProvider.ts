@@ -1,7 +1,6 @@
 'use strict';
 import * as vscode from 'vscode';
 
-import * as funcDefs from '../defs/defs';
 import * as typeDefs from '../defs/types';
 
 export class functionProvider {
@@ -12,35 +11,6 @@ export class functionProvider {
         this.functions = {};
         this.globalTypes = new Array<vscode.CompletionItem>();
         //this.functions = new Array<vscode.CompletionItem>();
-
-        // ! Rewrite the following to use the "new" kind of doing it :)
-        for (let i in funcDefs.defs) {
-            let idef = funcDefs.defs[i];
-
-            let def = new vscode.CompletionItem(idef.label, idef.module != "" ? vscode.CompletionItemKind.Method : vscode.CompletionItemKind.Function);
-            def.documentation = idef.toMarkdown();
-
-            if(idef.module != "")
-                def.detail = "Module: " + idef.module;
-            else
-                this.globalTypes.push(def);
-
-            if(this.functions[idef.module] == undefined)
-                this.functions[idef.module] = new Array<vscode.CompletionItem>();
-
-            this.functions[idef.module].push(def);
-        }
-
-        for(let i in typeDefs.luaTypes)
-        {
-            let itype = typeDefs.luaTypes[i];
-
-            let def = new vscode.CompletionItem(itype.label, vscode.CompletionItemKind.Class);
-            def.documentation = new vscode.MarkdownString();
-            def.documentation.appendMarkdown(itype.description);
-
-            this.globalTypes.push(def);
-        }
 
         // Built-in lua functions (print etc.)
         for(let i in typeDefs.luaFunctions)
@@ -73,6 +43,15 @@ export class functionProvider {
 
                 this.functions[itype.name].push(def);
             }
+        }
+
+        for(let i in typeDefs.luaConsts)
+        {
+            let iconst = typeDefs.luaConsts[i];
+
+            let def = new vscode.CompletionItem(iconst.name, vscode.CompletionItemKind.Constant);
+            def.documentation = iconst.toMarkdown();
+            this.globalTypes.push(def);
         }
     }
 

@@ -2,7 +2,6 @@
 
 import * as vscode from 'vscode';
 
-import * as funcDefs from '../defs/defs';
 import * as typeDefs from '../defs/types';
 
 export class hoverProvider implements vscode.HoverProvider {
@@ -11,24 +10,10 @@ export class hoverProvider implements vscode.HoverProvider {
     constructor(extensionPath: string) {
         this.functions = {};
 
-        for(let i in typeDefs.luaTypes)
+        for(let i in typeDefs.luaConsts)
         {
-            let idef = typeDefs.luaTypes[i];
-            if(this.functions[idef.label] == undefined)
-                this.functions[idef.label] = new vscode.MarkdownString(idef.description);
-        }
-
-        for(let i in funcDefs.defs)
-        {
-            let idef = funcDefs.defs[i];
-
-            if(this.functions[idef.module] == undefined)
-                this.functions[idef.module] = new vscode.MarkdownString(idef.module);
-
-            if(idef.module != "")
-                this.functions[idef.module + "." + idef.label] = idef.toMarkdown();
-            else
-                this.functions[idef.label] = idef.toMarkdown();
+            let iconst = typeDefs.luaConsts[i];
+            this.functions[iconst.name] = iconst.toMarkdown();
         }
 
         // Built-in lua functions (print etc.)
@@ -68,7 +53,6 @@ export class hoverProvider implements vscode.HoverProvider {
             }
 
             let hoveredWord = document.getText(hoveredWordPosition);
-            console.log(hoveredWord);
             hoveredFunction = this.functions[hoveredWord];
             if(hoveredFunction == undefined)
             {
